@@ -6,7 +6,7 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #e8e8e8;
+  background-color: #fca311;
   display: flex;
   align-items: center;
   height: 100vh;
@@ -24,7 +24,7 @@ main {
   align-items: center;
   font-size: 18px;
 }
-.mode_switch div {
+.switch_container {
   background-color: #2b2d38;
   border-radius: 1.5rem;
   display: flex;
@@ -103,4 +103,26 @@ main {
     border-radius: 1.5rem;
     overflow: hidden;
   }
+}
+
+/******** Light mode ********/
+.keys .keys-light_mode {
+  background-color: #fff;
+  color: #292b33;
+}
+.keys .keys-light_mode:hover {
+  background-color: #292b33;
+  color: #ffff;
+}
+.keys .green_number {
+  color: #38e8c6;
+}
+.keys .red_number {
+  color: #bf6d71;
+}
+.background_light-mode {
+  background-color: #fff;
+}
+.container_bacground {
+  background-color: #e8e8e8;
 }
