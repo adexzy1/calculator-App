@@ -32,6 +32,7 @@ main {
   justify-content: space-between;
   overflow: hidden;
 }
+
 .mode_switch div i {
   padding: 5px 15px;
   cursor: pointer;
@@ -41,6 +42,9 @@ main {
 }
 .mode_switch div i:nth-child(1) {
   color: #777a81;
+}
+.mode_switch div i:nth-child(2) {
+  color: #fff;
 }
 .mode_switch div i:nth-child(1):hover,
 .mode_switch div i:nth-child(2):hover {
@@ -60,10 +64,14 @@ main {
 }
 .text_screen p {
   padding-left: 5px;
+  border: none;
+  outline: none;
 }
 .result_container {
   font-size: 2.5rem;
   font-weight: 600;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 .keys {
   border-top-left-radius: 1.5rem;
@@ -78,14 +86,17 @@ main {
   row-gap: 1rem;
   align-items: center;
 }
-.keys span {
+.keys button {
   background-color: #292b33;
   padding: 20px;
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
 }
-.keys span:hover {
+.keys button:hover {
   background-color: #e8e8e8;
   color: #292b33;
 }
@@ -125,4 +136,10 @@ main {
 }
 .container_bacground {
   background-color: #e8e8e8;
+}
+.mode_switch-bgColor {
+  background-color: #f9f9f9;
+}
+#erase i {
+  pointer-events: none;
 }

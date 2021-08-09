@@ -15,41 +15,39 @@
     <main>
       <section class="mode_switch">
         <div class="switch_container">
-          <i id="light_mode" class="uil uil-sun"></i>
-          <i id="dark_mode" class="uil uil-moon"></i>
+          <i id="light_mode" class="uil uil-sun light_mode"></i>
+          <i id="dark_mode" class="uil uil-moon dark_mode"></i>
         </div>
       </section>
       <section class="screen">
         <div class="text_screen">
-          <p>300</p>
-          <p>x</p>
-          <p>200</p>
+          <p contenteditable="true"></p>
         </div>
-        <p class="result_container">300</p>
+        <p class="result_container"></p>
       </section>
       <section class="keys">
-        <span class="green_number">AC</span>
-        <span class="green_number">%</span>
-        <span class="green_number">π</span>
-        <span class="red_number">÷</span>
-        <span>7</span>
-        <span>8</span>
-        <span>9</span>
-        <span class="red_number">X</span>
-        <span>4</span>
-        <span>5</span>
-        <span>6</span>
-        <span class="red_number">-</span>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span class="red_number">+</span>
-        <span>
+        <button class="green_number" id="AC">AC</button>
+        <button class="green_number" id="%">%</button>
+        <button class="green_number" id="π">π</button>
+        <button class="red_number" id="÷">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="red_number">*</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="red_number">-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="red_number">+</button>
+        <button id="erase">
           <i class="uil uil-history"></i>
-        </span>
-        <span>0</span>
-        <span>.</span>
-        <span class="red_number">=</span>
+        </button>
+        <button>0</button>
+        <button>.</button>
+        <button class="red_number" id="=">=</button>
       </section>
     </main>
   </body>
