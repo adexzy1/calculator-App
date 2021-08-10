@@ -7,6 +7,7 @@ const keysContainer = document.querySelector('.keys');
 const keys = document.querySelectorAll('.keys button');
 const textScreen = document.querySelector('.text_screen p');
 const result_container = document.querySelector('.result_container');
+const audio = new Audio('sound.mp3');
 
 //event listeners
 lightMode.addEventListener('click', LightMode);
@@ -53,6 +54,7 @@ function ModeSwitch(e) {
 //get the values of each number
 keys.forEach((key) => {
   key.addEventListener('click', (e) => {
+    audio.play();
     switch (e.target.getAttribute('id')) {
       case 'AC':
         textScreen.textContent = '';
@@ -66,12 +68,16 @@ keys.forEach((key) => {
         textScreen.textContent = '';
         break;
       case '%':
+        result_container.textContent = '';
         const percent = textScreen.textContent / 100;
         result_container.textContent += percent;
+        textScreen.textContent = '';
         break;
       case 'π':
+        result_container.textContent = '';
         const pie = textScreen.textContent * 3.1415925536;
         result_container.textContent += pie;
+        textScreen.textContent = '';
         break;
       case '÷':
         textScreen.textContent += '/';
